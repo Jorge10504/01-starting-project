@@ -1,11 +1,7 @@
-export default function Button({ children }) {
-  function handleClick() {
-    console.log("Hello World!");
-  }
-
+export default function Button({ children, onSelect }) {
   return (
     <li>
-      <button onClick={handleClick}>{children}</button>
+      <button onClick={onSelect}>{children}</button>
     </li>
   );
 }
